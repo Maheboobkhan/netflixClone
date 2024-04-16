@@ -1,0 +1,43 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.row-container {
+    display: flex;
+    padding-top: 3px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+
+.row-img {
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row-img:hover{
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+/* responsive for tablet */
+@media (min-width:481px) and (max-width:768px){
+    .row-img{
+        width: 200px;
+    }
+}
+
+/* responsive for mobile */
+@media (min-width:320px) and (max-width:481px){
+    .row-img{
+        width: 140px;
+    }
+}

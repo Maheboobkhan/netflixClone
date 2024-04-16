@@ -1,0 +1,43 @@
+.original{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.original-container{
+    display: flex;
+    padding-top: 3px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.original-img{
+    width: 300px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.original-img:hover{
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .original-img {
+        width: 200px;
+    }
+}
+
+@media (max-width:481px){
+    .original{
+        margin-top: 250px;
+    }
+    .original-img{
+        width: 150px;
+    }
+}
